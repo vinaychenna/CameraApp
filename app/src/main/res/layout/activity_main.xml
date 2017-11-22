@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cameraapp.MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:text="Please Select Type"
+    android:textColor="@android:color/black"
+    android:layout_height="wrap_content" />
+   <RadioGroup
+       android:id="@+id/rg"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <RadioButton
+          android:id="@+id/singlePage"
+          android:layout_width="wrap_content"
+          android:text="Single Page"
+          android:layout_height="wrap_content" />
+
+
+      <RadioButton
+          android:id="@+id/multipage"
+          android:layout_width="wrap_content"
+          android:text="Multi Page"
+          android:layout_height="wrap_content" />
+   </RadioGroup>
+
+   <Button
+       android:layout_weight="0.1"
+       android:layout_width="match_parent"
+       android:paddingBottom="3dp"
+       android:paddingTop="3dp"
+       android:text="Click to capture image"
+       android:textAllCaps="false"
+       android:id="@+id/click"
+       android:layout_height="wrap_content" />
+   <ImageView
+       android:layout_weight="0.9"
+       android:layout_width="match_parent"
+       android:id="@+id/iv"
+       android:layout_height="match_parent" />
+
+</LinearLayout>
